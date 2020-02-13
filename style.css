@@ -100,9 +100,10 @@ Body Styling
 -------------------------------- */
 body {
   /* this is the page background */
-  background: url(assets/sherlock.svg) no-repeat;
+  background: url(assets/smoke.svg), url(assets/sherlock.svg);
+  background-repeat: no-repeat, no-repeat;
   background-size: 30%;
-  background-position: 0 13rem;
+  background-position: 50%, 0 13rem;
 }
 
 /* -------------------------------- 
