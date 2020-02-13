@@ -98,6 +98,8 @@ Body Styling
 body {
   /* this is the page background */
   background-color: white;
+  background: url(assets/sherlock-01.svg) no-repeat;
+  background-size: 45%;
 }
 
 /* -------------------------------- 
@@ -224,7 +226,7 @@ section > h2::before {
 p {
   font-size: 1.4rem;
   line-height: 1.4;
-  color: #1f110b;
+  color: #C7B299;
 }
 p a {
   color: #1f110b;
@@ -556,11 +558,11 @@ main {
   padding: 50px 0;
 }
 main > h1 {
-  text-align: center;
+  text-align: right;
   margin: 3em 0 0.5em 0;
 }
 main > h2 {
-  text-align: center;
+  text-align: right;
   margin: 0 0 3em 0;
 }
 @media only screen and (min-width: 1024px) {
