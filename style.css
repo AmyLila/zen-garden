@@ -104,17 +104,8 @@ body {
   background-repeat: repeat-x, no-repeat;
   background-size: 60%, 30%;
   background-position: -5rem 5rem, 0 13rem;
-  animation: animateSmoke 6s linear infinite;
 }
 
-@keyframes animateSmoke {
-  from {
-    background-position: -5rem 5rem, 0 13rem;
-  }
-  to {
-    background-position: 300px -90px, 0 13rem;
-  }
-}
 /* -------------------------------- 
 
 Containers
