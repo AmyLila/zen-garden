@@ -99,7 +99,7 @@ Body Styling
 
 -------------------------------- */
 body {
-  /* this is the page background */
+  /* this is the page background*/
   background: url(assets/smoke-01.svg), url(assets/sherlock.svg);
   background-repeat: repeat-x, no-repeat;
   background-size: 60%, 30%;
@@ -222,6 +222,12 @@ h2 {
   }
 }
 
+h3 {
+  font-weight: bolder;
+  text-decoration: underline;
+  color: #5F3916;
+}
+
 section > h2::before {
   /* number before each section title */
   color: #1f110b;
@@ -266,6 +272,8 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Didact Gothic", sans-serif;
+  width: 800px;
+  margin: 0 auto;
 }
 
 a {
