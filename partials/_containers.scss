@@ -3,11 +3,92 @@
 Containers
 
 -------------------------------- */
+/*//container.scss
+// class names of the containers on the page.
+//'*' contains other containers. '**' contains all other containers. 
+//page-wrapper**
+//intro*
+//summary
+//preamble
+//main*
+//explanation
+//participation
+//benefits
+//requirements
+//wrapper*
+//design-selection 
+//design-archives
+//zen-resources*/
+/* not inclused in the zen-garden html file 
 .cd-box {
-    /* this is the container of various design elements - i.e. the 2 logo of the branding section */
+     this is the container of various design elements - i.e. the 2 logo of the branding section 
     border: 1px solid $color-med;
     border-radius: 3px;
     background: $color-light;
     box-shadow: 0 1px 1px rgba(#000, 0.05);
     padding: 6px;
+  } */
+  .intro,.summary,.preamble,.main,.explanation,
+  .participation,.benefits,.requirements{
+    margin:4em 0 ;
+    width:100%;
+  }
+  .intro{
+   margin-top:4em;
+  }
+ .summary{
+   position:relative;
+   left:20em;
+   width:60%;
+   text-align:right;
+   a{
+    display:block;
+  }
+  p:nth-child(2){
+    margin-top:2%;
+  } 
+ }
+ .preamble{
+   position:relative;
+   left:10em;
+   width:80%;
+   margin:5em 0; 
+   p{
+    margin: 1em 0; 
+   }
+ } 
+ 
+  .explanation, .benefits{
+    background-color:$color-light;
+  }
+  .explanation{
+    height:20em;
+    width:100%;
+   h3{
+    width:70%;
+    margin:1em auto;
+    padding-top:1em
+   }
+   p{
+    width:70%;
+    margin:1em auto; 
+   }
+  }
+  .participation,.benefits,.requirements{
+    padding-left:2%;
+    p{
+      margin:1em 0;
+    }
+  }
+  .benefits{
+    h3{
+      padding-top:1em;
+    }
+  }
+  .requirements{
+    p:nth-child(6){
+      width:55%;
+      margin:3em auto;
+      background-color:$color-light;
+    }
   }

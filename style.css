@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*reset.scss*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,6 +53,7 @@ table {
   border-spacing: 0;
 }
 
+/*end reset.scss*/
 /* -------------------------------- 
 
 Colors
@@ -111,13 +113,97 @@ body {
 Containers
 
 -------------------------------- */
+/*//container.scss
+// class names of the containers on the page.
+//'*' contains other containers. '**' contains all other containers. 
+//page-wrapper**
+//intro*
+//summary
+//preamble
+//main*
+//explanation
+//participation
+//benefits
+//requirements
+//wrapper*
+//design-selection 
+//design-archives
+//zen-resources*/
+/* not inclused in the zen-garden html file 
 .cd-box {
-  /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-  border: 1px solid #5F3916;
-  border-radius: 3px;
-  background: #C7B299;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  padding: 6px;
+     this is the container of various design elements - i.e. the 2 logo of the branding section 
+    border: 1px solid $color-med;
+    border-radius: 3px;
+    background: $color-light;
+    box-shadow: 0 1px 1px rgba(#000, 0.05);
+    padding: 6px;
+  } */
+.intro, .summary, .preamble, .main, .explanation,
+.participation, .benefits, .requirements {
+  margin: 4em 0;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 4em;
+}
+
+.summary {
+  position: relative;
+  left: 20em;
+  width: 60%;
+  text-align: right;
+}
+.summary a {
+  display: block;
+}
+.summary p:nth-child(2) {
+  margin-top: 2%;
+}
+
+.preamble {
+  position: relative;
+  left: 10em;
+  width: 80%;
+  margin: 5em 0;
+}
+.preamble p {
+  margin: 1em 0;
+}
+
+.explanation, .benefits {
+  background-color: #C7B299;
+}
+
+.explanation {
+  height: 20em;
+  width: 100%;
+}
+.explanation h3 {
+  width: 70%;
+  margin: 1em auto;
+  padding-top: 1em;
+}
+.explanation p {
+  width: 70%;
+  margin: 1em auto;
+}
+
+.participation, .benefits, .requirements {
+  padding-left: 2%;
+}
+.participation p, .benefits p, .requirements p {
+  margin: 1em 0;
+}
+
+.benefits h3 {
+  padding-top: 1em;
+}
+
+.requirements p:nth-child(6) {
+  width: 55%;
+  margin: 3em auto;
+  background-color: #C7B299;
 }
 
 /* -------------------------------- 
@@ -595,60 +681,60 @@ main > h2 {
   }
 }
 
-section {
-  margin: 3em 0;
-}
-section::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-section:nth-of-type(1) h2::before {
-  content: "1. ";
-}
-section:nth-of-type(2) h2::before {
-  content: "2. ";
-}
-section:nth-of-type(3) h2::before {
-  content: "3. ";
-}
-section:nth-of-type(4) h2::before {
-  content: "4. ";
-}
-section:nth-of-type(5) h2::before {
-  content: "5. ";
-}
-section:nth-of-type(6) h2::before {
-  content: "6. ";
-}
-section:nth-of-type(7) h2::before {
-  content: "7. ";
-}
-section:nth-of-type(8) h2::before {
-  content: "8. ";
-}
-section:nth-of-type(9) h2::before {
-  content: "9. ";
-}
-section:nth-of-type(10) h2::before {
-  content: "10. ";
-}
-@media only screen and (min-width: 768px) {
-  section {
-    margin: 3em 0 5em;
-  }
-}
-@media only screen and (min-width: 1600px) {
-  section {
-    width: 48%;
-    float: left;
-    margin: 0 4% 4em 0;
-  }
-  section:nth-of-type(2n) {
-    margin-right: 0;
-  }
-}
+/*section {
+	margin: 3em 0;
+	@include clearfix;
 
+	&:nth-of-type(1) h2::before {
+		content: '1. ';
+	}
+
+	&:nth-of-type(2) h2::before {
+		content: '2. ';
+	}
+
+	&:nth-of-type(3) h2::before {
+		content: '3. ';
+	}
+
+	&:nth-of-type(4) h2::before {
+		content: '4. ';
+	}
+
+	&:nth-of-type(5) h2::before {
+		content: '5. ';
+	}
+
+	&:nth-of-type(6) h2::before {
+		content: '6. ';
+	}
+
+    &:nth-of-type(7) h2::before {
+		content: '7. ';
+	}
+      &:nth-of-type(8) h2::before {
+		content: '8. ';
+	}
+      &:nth-of-type(9) h2::before {
+		content: '9. ';
+	}
+    &:nth-of-type(10) h2::before {
+		content: '10. ';
+	}
+
+	@include MQ(S) {
+		margin: 3em 0 5em;
+	}
+
+	@include MQ(L) {
+		@include column(.48);
+		margin: 0 4% 4em 0;
+
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
+	}
+}*/
 /* xBranding section - basic style */
 .cd-branding .cd-box {
   margin-bottom: 1em;

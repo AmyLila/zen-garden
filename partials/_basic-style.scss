@@ -3,7 +3,7 @@
 xBasic style
 
 -------------------------------- */
-
+//basic styles.scss
 *, *::after, *::before {
 	@include box-sizing(border-box);
 }
@@ -307,7 +307,7 @@ main {
 	}
 }
 
-section {
+/*section {
 	margin: 3em 0;
 	@include clearfix;
 
@@ -360,7 +360,7 @@ section {
 			margin-right: 0;
 		}
 	}
-}
+}*/
 
 /* xBranding section - basic style */
 
@@ -581,3 +581,4 @@ section {
 		color: $color-darkest;
 	}
 }
+//end basic-styles.scss
