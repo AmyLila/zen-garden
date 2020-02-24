@@ -97,17 +97,86 @@ header h1, header h2 {
 
 /* -------------------------------- 
 
+variables
+
+-------------------------------- */
+/* -------------------------------- 
+
 Body Styling
 
 -------------------------------- */
 body {
   /* this is the page background*/
-  background: url(assets/smoke-01.svg), url(assets/sherlock.svg);
-  background-repeat: repeat-x, no-repeat;
-  background-size: 60%, 30%;
-  background-position: -5rem 5rem, 0 13rem;
+  background: url(assets/sherlock.svg);
+  background-repeat: no-repeat;
+  background-size: 390px;
+  background-position: 0 70px;
 }
 
+/* -------------------------------- 
+
+Smoke Ring
+
+-------------------------------- */
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 10px solid #1f110b;
+  border-radius: 50%;
+  width: 50px;
+  height: 30px;
+  background-color: transparent;
+  top: 520px;
+  left: 330px;
+  -webkit-animation: animateSmoke 6s linear 10;
+  animation: animateSmoke 6s linear 10;
+  animation-delay: 2.5s;
+}
+
+/* -------------------------------- 
+
+Smoke Circle
+
+-------------------------------- */
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #1f110b;
+  top: 520px;
+  left: 330px;
+  -webkit-animation: animateSmoke 6s linear 10;
+  animation: animateSmoke 6s linear 10;
+}
+
+@-webkit-keyframes animateSmoke {
+  100% {
+    transform: translate(100px, -500px) scale(3.5);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+}
+@keyframes animateSmoke {
+  100% {
+    transform: translate(100px, -500px) scale(3.5);
+    opacity: 0;
+    filter: blur(5px);
+  }
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    filter: blur(5px);
+  }
+}
 /* -------------------------------- 
 
 Containers

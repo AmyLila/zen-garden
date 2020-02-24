@@ -1,21 +1,92 @@
+
+
+/* -------------------------------- 
+
+variables
+
+-------------------------------- */
+$sherlock-width: 0;
+$sherlock-height:70px;
+$ring-width: $sherlock-width + 330px;
+$ring-height: $sherlock-height + 450px;
+$end-height: -5rem;
+
 /* -------------------------------- 
 
 Body Styling
 
 -------------------------------- */
+
 body {
     /* this is the page background*/
-    background: url(assets/ring.svg),
-    url(assets/big-circle.svg),
-    url(assets/ellipse.svg),
+
+    background:
     url(assets/sherlock.svg);
-    background-repeat: repeat-x,
-    no-repeat;
-    background-size: 60%, 30%;
-    background-position: -5rem 5rem, 0 13rem;
-    //animation: animateSmoke 6s linear infinite;
+    background-repeat: no-repeat;
+    background-size:  390px;
+    background-position: $sherlock-width $sherlock-height;
+}
+/* -------------------------------- 
+
+Smoke Ring
+
+-------------------------------- */ 
+body::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border:10px solid $color-darkest;
+  border-radius: 50%;
+  width:50px;
+  height:30px;
+  background-color: transparent;
+  top:$ring-height;
+  left: $ring-width;
+  -webkit-animation: animateSmoke 6s linear 10;
+  animation: animateSmoke 6s linear 10;
+  animation-delay: 2.5s;
+}
+/* -------------------------------- 
+
+Smoke Circle
+
+-------------------------------- */
+  body::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    background-color: $color-darkest;
+    top:$ring-height;
+    left: $ring-width;
+    -webkit-animation: animateSmoke 6s linear 10;
+    animation: animateSmoke 6s linear 10;
   }
-  // @keyframes animateSmoke {
-  //   from { background-position: -5rem 5rem, 0 13rem; }
-  //   to { background-position: 300px -90px, 0 13rem; }
-  // }
+  @-webkit-keyframes animateSmoke {
+    100% {
+      transform: translate(100px, -500px) scale(3.5);
+      opacity: 0;
+      filter: blur(5px);
+    }
+    0% {
+      transform: translate(0,0) scale(1);
+      opacity: 1;
+      filter: blur(5px)
+    }
+
+  }  
+  @keyframes animateSmoke {
+    100% {
+      transform: translate(100px, -500px) scale(3.5);
+      opacity: 0;
+      filter: blur(5px);
+    }
+    0% {
+      transform: translate(0,0) scale(1);
+      opacity: 1;
+      filter: blur(5px)
+    }
+ 
+  }
