@@ -9,14 +9,25 @@ body::after {
     position: absolute;
     border:10px solid $color-darkest;
     border-radius: 50%;
-    width:50px;
-    height:30px;
+    width:40px;
+    height:25px;
     background-color: transparent;
-    top:$ring-height;
-    left: $ring-width;
+    top:350px;
+    left: 205px;
     -webkit-animation: animateSmoke 6s linear 10;
     animation: animateSmoke 6s linear 10;
     animation-delay: 2.5s;
+
+    @include MQ(M){
+      top:420px;
+      left: 275px;
+    }
+    @include MQ(L){
+      top:520px;
+      left:329px;
+    }
+
+
   }
   /* -------------------------------- 
   
@@ -31,10 +42,21 @@ body::after {
       width:40px;
       height:40px;
       background-color: $color-darkest;
-      top:$ring-height;
-      left: $ring-width;
+      top:350px;
+      left:205px;
       -webkit-animation: animateSmoke 6s linear 10;
       animation: animateSmoke 6s linear 10;
+
+
+    @include MQ(M){
+      top:420px;
+      left: 275px;
+    }
+    @include MQ(L){
+      top:520px;
+      left:329px;
+    }
+
     }
     @-webkit-keyframes animateSmoke {
       100% {

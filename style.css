@@ -86,7 +86,7 @@ header h1, header h2 {
   background-color: white;
   width: 120px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .cd-logo {
     width: 180px;
   }
@@ -109,8 +109,18 @@ body {
   /* this is the page background*/
   background: url(assets/sherlock.svg);
   background-repeat: no-repeat;
-  background-size: 390px;
+  background-size: 250px;
   background-position: -1px 70px;
+}
+@media only screen and (min-width: 820px) {
+  body {
+    background-size: 320px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body {
+    background-size: 390px;
+  }
 }
 
 /* -------------------------------- 
@@ -248,7 +258,7 @@ xNavigation
   color: #C7B299;
   border-color: #1f110b;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .cd-main-nav li a, .cd-primary-nav li a {
     color: #C7B299;
   }
@@ -266,7 +276,7 @@ xPage title
 main > h1 {
   color: #1f110b;
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   main > h1 {
     /* title goes into the header on big devices */
     color: #1f110b;
@@ -290,12 +300,12 @@ h1 {
   line-height: 1.2;
   margin: 0 0 0.4em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   h1 {
     font-size: 3.2rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   h1 {
     font-size: 4rem;
   }
@@ -306,7 +316,7 @@ h2 {
   text-transform: uppercase;
   margin: 1em 0;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   h2 {
     font-size: 1.8rem;
     margin: 1em 0 1.4em;
@@ -333,7 +343,7 @@ p a {
   color: #1f110b;
   text-decoration: underline;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   p {
     font-size: 1.6rem;
     line-height: 1.6;
@@ -387,7 +397,7 @@ header {
 header nav {
   display: inline-block;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   header {
     height: 80px;
   }
@@ -414,7 +424,7 @@ header nav {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .cd-logo {
     margin-left: 5%;
   }
@@ -475,7 +485,7 @@ header nav {
   -o-transform: translateY(6px);
   transform: translateY(6px);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .cd-nav-trigger {
     display: none;
   }
@@ -508,7 +518,7 @@ header nav {
 .cd-main-nav li:first-of-type a {
   border-top-width: 1px;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .cd-main-nav {
     position: static;
     display: table;
@@ -541,7 +551,7 @@ header nav {
     border-top: none;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .cd-main-nav {
     display: none;
   }
@@ -634,7 +644,7 @@ header nav {
   -moz-transition: opacity 0.2s 0s, visibility 0s 0s;
   transition: opacity 0.2s 0s, visibility 0s 0s;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   .cd-download {
     display: block;
   }
@@ -643,7 +653,7 @@ header nav {
     visibility: hidden;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .cd-download {
     right: 5%;
   }
@@ -651,7 +661,7 @@ header nav {
 
 main {
   width: 90%;
-  max-width: 1024px;
+  max-width: 820px;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -663,12 +673,12 @@ main > h2 {
   text-align: right;
   margin: 0 0 3em 0;
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 820px) {
   main {
     padding-top: 80px;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   main {
     max-width: none;
     padding: 120px 0 50px;
@@ -775,7 +785,7 @@ main > h2 {
   height: 16px;
   border-radius: 0.2em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .cd-branding .cd-box {
     width: 49%;
     float: left;
@@ -870,7 +880,7 @@ main > h2 {
 .cd-colors li:nth-of-type(5) .cd-color-swatch::after {
   background: #bea689;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .cd-colors li {
     width: 19%;
     float: left;
@@ -884,7 +894,7 @@ main > h2 {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .cd-wireframes .cd-box {
     width: 100%;
     display: grid;
@@ -892,7 +902,7 @@ main > h2 {
     grid-column-gap: 50px;
   }
 }
-@media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1200px) {
   .cd-wireframes .cd-box {
     width: 300%;
   }
@@ -903,7 +913,7 @@ main > h2 {
 .cd-form .cd-box {
   padding: 1em;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 300px) {
   .cd-typography .cd-box .cd-box,
 .cd-buttons .cd-box .cd-box,
 .cd-icons .cd-box .cd-box,
@@ -929,14 +939,26 @@ body::after {
   position: absolute;
   border: 10px solid #1f110b;
   border-radius: 50%;
-  width: 50px;
-  height: 30px;
+  width: 40px;
+  height: 25px;
   background-color: transparent;
-  top: 520px;
-  left: 329px;
+  top: 350px;
+  left: 205px;
   -webkit-animation: animateSmoke 6s linear 10;
   animation: animateSmoke 6s linear 10;
   animation-delay: 2.5s;
+}
+@media only screen and (min-width: 820px) {
+  body::after {
+    top: 420px;
+    left: 275px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body::after {
+    top: 520px;
+    left: 329px;
+  }
 }
 
 /* -------------------------------- 
@@ -952,10 +974,22 @@ body::before {
   width: 40px;
   height: 40px;
   background-color: #1f110b;
-  top: 520px;
-  left: 329px;
+  top: 350px;
+  left: 205px;
   -webkit-animation: animateSmoke 6s linear 10;
   animation: animateSmoke 6s linear 10;
+}
+@media only screen and (min-width: 820px) {
+  body::before {
+    top: 420px;
+    left: 275px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  body::before {
+    top: 520px;
+    left: 329px;
+  }
 }
 
 @-webkit-keyframes animateSmoke {
