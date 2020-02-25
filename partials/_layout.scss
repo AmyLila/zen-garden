@@ -1,8 +1,9 @@
 // breakpoints
    
-$S:     300px;   
-$M:     820px;     
-$L:     1200px;   
+$S:     24em;   
+$M:     46.8em;     
+$L:     50em;  
+$XL:    73em; 
 
 // media queries
 
@@ -24,4 +25,3 @@ $L:     1200px;
   width: 100% * $percentage;
   float: $float-direction;
 }
-

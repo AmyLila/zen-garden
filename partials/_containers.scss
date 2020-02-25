@@ -19,76 +19,135 @@ Containers
 //design-selection 
 //design-archives
 //zen-resources*/
-/* not inclused in the zen-garden html file 
-.cd-box {
-     this is the container of various design elements - i.e. the 2 logo of the branding section 
-    border: 1px solid $color-med;
-    border-radius: 3px;
-    background: $color-light;
-    box-shadow: 0 1px 1px rgba(#000, 0.05);
-    padding: 6px;
-  } */
-  .intro,.summary,.preamble,.main,.explanation,
-  .participation,.benefits,.requirements{
-    margin:4em 0 ;
+
+
+// Main page container
+.page-wrapper{
+  display:flex;
+  flex-flow: row wrap;
+}
+
+  .intro,.preamble, .participation,.benefits,.requirements{
+    margin:4em 0 1em 0;
     width:100%;
   }
   .intro{
    margin-top:4em;
   }
  .summary{
-   position:relative;
-   left:20em;
-   width:60%;
-   text-align:right;
+    margin: 5% 2% 2% 60% ;
+    width: 40%;
+    text-align:right;
+// media queries to adjust alignment
+    @include MQ(M){
+        margin: 5% 2% 2% 45% ;
+        width: 55%;
+    }
+
+    @include MQ(L){
+      margin: 5% 2% 2% 40% ;
+      width: 60%;
+    }
+
    a{
     display:block;
   }
+
   p:nth-child(2){
     margin-top:2%;
   } 
  }
+
  .preamble{
-   position:relative;
-   left:10em;
-   width:80%;
-   margin:5em 0; 
+   text-align: right;
+   margin:10rem 0 1rem 0; 
+
+   @include MQ(M){
+    margin: 5% 2% 2% 45% ;
+    width: 55%;
+}
+  @include MQ(L){
+    margin: 5% 2% 2% 40% ;
+    width: 60%;
+}
    p{
     margin: 1em 0; 
    }
  } 
- 
+/* -------------------------------- 
+
+note mixins and variables are in the variables partial
+
+-------------------------------- */
+// Layout for the bottom half of page 
+.main-supporting{
+  display:flex;
+  flex-flow: row wrap;
+}
   .explanation, .benefits{
     background-color:$color-light;
-  }
-  .explanation{
-    height:20em;
     width:100%;
-   h3{
+    padding: 1rem;
+
+    @include MQ(L){
+      margin-top: 5% ;
+    }
+
+   h3, p{
     width:70%;
     margin:1em auto;
-    padding-top:1em
    }
-   p{
-    width:70%;
-    margin:1em auto; 
-   }
+
   }
-  .participation,.benefits,.requirements{
+  
+    // //mixins
+    // @mixin col($span-num) {
+    //  flex: 0 0 $one-column * $span-num;
+    // }
+  
+    // @mixin offset($offset-num) {
+    //  margin-left: $one-column * $offset-num;
+
+  .participation, .requirements{
+    @include MQ(L){
+      @include col(2);
+      text-align: left;
+    }
+
     padding-left:2%;
     p{
       margin:1em 0;
     }
   }
   .benefits{
-    h3{
-      padding-top:1em;
+    @include MQ(L){
+      @include col(2);
+      @include offset(1);
+      text-align: right;
     }
   }
+
   .requirements{
     p:nth-child(6){
+      @include MQ(L){
+        width:100%;
+      }
       width:55%;
       margin:3em auto;
       background-color:$color-light;
+    }
+  }
+  footer{
+    @include MQ(L){
+      @include col(3);
+      display:flex;
+      flex-flow: row;
+      
+      a{
+        flex:0 0 20%;
+        margin: 0 auto;
+        text-align: center;
+      }
+
     }
   }
