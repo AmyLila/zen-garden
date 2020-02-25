@@ -135,13 +135,14 @@ note mixins and variables are in the variables partial
       width:55%;
       margin:3em auto;
       background-color:$color-light;
+      padding: 1rem;
     }
   }
   footer{
-    @include MQ(L){
-      @include col(3);
-      display:flex;
-      flex-flow: row;
+ 
+    @include col(3);
+    display:flex;
+    flex-flow: row;
       
       a{
         flex:0 0 20%;
@@ -149,5 +150,4 @@ note mixins and variables are in the variables partial
         text-align: center;
       }
 
-    }
   }

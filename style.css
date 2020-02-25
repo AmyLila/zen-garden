@@ -238,6 +238,7 @@ note mixins and variables are in the variables partial
   width: 55%;
   margin: 3em auto;
   background-color: #C7B299;
+  padding: 1rem;
 }
 @media only screen and (min-width: 50em) {
   .requirements p:nth-child(6) {
@@ -245,17 +246,15 @@ note mixins and variables are in the variables partial
   }
 }
 
-@media only screen and (min-width: 50em) {
-  footer {
-    flex: 0 0 100%;
-    display: flex;
-    flex-flow: row;
-  }
-  footer a {
-    flex: 0 0 20%;
-    margin: 0 auto;
-    text-align: center;
-  }
+footer {
+  flex: 0 0 100%;
+  display: flex;
+  flex-flow: row;
+}
+footer a {
+  flex: 0 0 20%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* -------------------------------- 
