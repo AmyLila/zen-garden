@@ -38,6 +38,7 @@ Containers
     margin: 5% 2% 2% 60% ;
     width: 40%;
     text-align:right;
+     line-height: normal;
 // media queries to adjust alignment
     @include MQ(M){
         margin: 5% 2% 2% 45% ;

@@ -148,6 +148,7 @@ Containers
   margin: 5% 2% 2% 60%;
   width: 40%;
   text-align: right;
+  line-height: normal;
 }
 @media only screen and (min-width: 46.8em) {
   .summary {
