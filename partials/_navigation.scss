@@ -1,36 +1,84 @@
 /* -------------------------------- 
 
-xNavigation 
+Navigation 
 
 -------------------------------- */
 //navigation.scss
-nav {
+.design-selection h3{
+  font-size: 2rem;
+  padding:1rem;
+}
+.design-selection nav {
     /* main navigation background color - full screen on small devices */
-    background: white;
-  
+    background:transparent;
+    width:100%;
+ 
     li:nth-child(1) {
+      padding:3rem;
       background-color: $color-dark;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(2) {
+      padding:3rem;
       background-color: $color-darkest;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(3) {
+      padding:3rem;
       background-color: $color-accent;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(4) {
+      padding:3rem;
       background-color: $color-med;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(5) {
+      padding:3rem;
       background-color: $color-light;
+      
+      //text color 
+      a{color:$color-darkest;}
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(6) {
+      padding:3rem;
       background-color: $color-darkest;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(7) {
+      padding:3rem;
       background-color: $color-dark;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     li:nth-child(8) {
+      padding:3rem;
       background-color: $color-med;
+      @include MQ(M){
+        writing-mode: vertical-rl;
+        padding: 2rem;
+      }
     }
     
   
@@ -56,3 +104,26 @@ nav {
     }
   }
   //end navigation.scss
+
+  /* -------------------------------- 
+
+Spacing for bookshelf
+
+-------------------------------- */
+.design-selection{
+  width:100%
+}
+//placeholder for bookshelf
+.design-selection ul::before{
+  content: "";
+  background-color: yellow;
+  @include navCol(2); 
+    
+} 
+//placeholder for bookshelf
+.design-selection ul::after{
+  content: "";
+  @include navCol(2);
+  background-color: yellowgreen;
+} 
+

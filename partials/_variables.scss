@@ -25,3 +25,20 @@ $one-column : 100% / $num_columns;
 @mixin offset($offset-num) {
  margin-left: $one-column * $offset-num;
 }
+
+/* -------------------------------- 
+
+12 cloumn grid layout
+
+-------------------------------- */
+$nav-num-columns : 12;
+$nav-one-column : 100% / $nav-num_columns;
+
+//mixins
+@mixin navCol($span-num) {
+ flex: 1 0 $nav-one-column * $span-num;
+}
+
+@mixin navOffset($offset-num) {
+ margin-left: $nav-one-column * $offset-num;
+}

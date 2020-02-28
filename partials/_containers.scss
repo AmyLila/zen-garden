@@ -38,7 +38,7 @@ Containers
     margin: 5% 2% 2% 60% ;
     width: 40%;
     text-align:right;
-     line-height: normal;
+    line-height: normal;
 // media queries to adjust alignment
     @include MQ(M){
         margin: 5% 2% 2% 45% ;
@@ -100,14 +100,6 @@ note mixins and variables are in the variables partial
    }
 
   }
-  
-    // //mixins
-    // @mixin col($span-num) {
-    //  flex: 0 0 $one-column * $span-num;
-    // }
-  
-    // @mixin offset($offset-num) {
-    //  margin-left: $one-column * $offset-num;
 
   .participation, .requirements{
     @include MQ(L){
@@ -140,7 +132,6 @@ note mixins and variables are in the variables partial
     }
   }
   footer{
- 
     @include col(3);
     display:flex;
     flex-flow: row;
@@ -150,5 +141,26 @@ note mixins and variables are in the variables partial
         margin: 0 auto;
         text-align: center;
       }
+    }
 
+.sidebar{
+  width:100%;
+}    
+.design-selection{
+  text-align: center;
+  display:flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  
+  ul{
+    @include MQ(M){
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+    }
+    background-color: orange;
   }
+ 
+  }
+  

@@ -66,6 +66,11 @@ Sherlock and smoke variables
 -------------------------------- */
 /* -------------------------------- 
 
+12 cloumn grid layout
+
+-------------------------------- */
+/* -------------------------------- 
+
 Colors
 
 -------------------------------- */
@@ -107,6 +112,139 @@ body {
   body {
     background-size: 390px;
   }
+}
+
+/* -------------------------------- 
+
+Navigation 
+
+-------------------------------- */
+.design-selection h3 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.design-selection nav {
+  /* main navigation background color - full screen on small devices */
+  background: transparent;
+  width: 100%;
+}
+.design-selection nav li:nth-child(1) {
+  padding: 3rem;
+  background-color: #412312;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(1) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(2) {
+  padding: 3rem;
+  background-color: #1f110b;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(2) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(3) {
+  padding: 3rem;
+  background-color: #89010F;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(3) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(4) {
+  padding: 3rem;
+  background-color: #5F3916;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(4) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(5) {
+  padding: 3rem;
+  background-color: #C7B299;
+}
+.design-selection nav li:nth-child(5) a {
+  color: #1f110b;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(5) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(6) {
+  padding: 3rem;
+  background-color: #1f110b;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(6) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(7) {
+  padding: 3rem;
+  background-color: #412312;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(7) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li:nth-child(8) {
+  padding: 3rem;
+  background-color: #5F3916;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li:nth-child(8) {
+    writing-mode: vertical-rl;
+    padding: 2rem;
+  }
+}
+.design-selection nav li a {
+  color: #C7B299;
+  border-color: #1f110b;
+}
+@media only screen and (min-width: 46.8em) {
+  .design-selection nav li a {
+    color: #C7B299;
+  }
+  .design-selection nav li a.selected {
+    color: #5F3916;
+    box-shadow: 0 2px 0 #1f110b;
+  }
+}
+
+/* -------------------------------- 
+
+Spacing for bookshelf
+
+-------------------------------- */
+.design-selection {
+  width: 100%;
+}
+
+.design-selection ul::before {
+  content: "";
+  background-color: yellow;
+  flex: 1 0 16.6666666667%;
+}
+
+.design-selection ul::after {
+  content: "";
+  flex: 1 0 16.6666666667%;
+  background-color: yellowgreen;
 }
 
 /* -------------------------------- 
@@ -258,50 +396,25 @@ footer a {
   text-align: center;
 }
 
-/* -------------------------------- 
+.sidebar {
+  width: 100%;
+}
 
-xNavigation 
-
--------------------------------- */
-nav {
-  /* main navigation background color - full screen on small devices */
-  background: white;
+.design-selection {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
 }
-nav li:nth-child(1) {
-  background-color: #412312;
-}
-nav li:nth-child(2) {
-  background-color: #1f110b;
-}
-nav li:nth-child(3) {
-  background-color: #89010F;
-}
-nav li:nth-child(4) {
-  background-color: #5F3916;
-}
-nav li:nth-child(5) {
-  background-color: #C7B299;
-}
-nav li:nth-child(6) {
-  background-color: #1f110b;
-}
-nav li:nth-child(7) {
-  background-color: #412312;
-}
-nav li:nth-child(8) {
-  background-color: #5F3916;
-}
-nav li a {
-  color: #C7B299;
-  border-color: #1f110b;
+.design-selection ul {
+  background-color: orange;
 }
 @media only screen and (min-width: 46.8em) {
-  nav li a {
-    color: #C7B299;
-  }
-  nav li a.selected {
-    color: #5F3916;
-    box-shadow: 0 2px 0 #1f110b;
+  .design-selection ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
   }
 }
 
