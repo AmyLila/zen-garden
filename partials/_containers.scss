@@ -158,15 +158,14 @@ note mixins and variables are in the variables partial
     ul {
       display:flex;
       flex-direction:row;
-      font-size:.75em;
       text-align:center;
      } 
     li:nth-child(odd){
       margin: 2em 2em 0 0;
-      width:20vw;
+      
     }
     li:nth-child(even){
-      margin:5em 2em 0 0;
+      margin:8em 2em 0 0;
     }
     @include MQ(L){
       ul{
