@@ -159,8 +159,36 @@ note mixins and variables are in the variables partial
       flex-flow: row;
       justify-content: space-around;
     }
-    background-color: orange;
   }
  
+  }
+  
+  .zen-resources{
+    margin:1em 2%;
+    
+    ul {
+      display:flex;
+      flex-direction:row;
+      text-align:center;
+     } 
+    li:nth-child(odd){
+      margin: 2em 2em 0 0;
+      
+    }
+    li:nth-child(even){
+      margin:8em 2em 0 0;
+    }
+    @include MQ(L){
+      ul{
+        font-size:1.2em;
+        li:nth-child(odd){
+          margin:2em 5em 0 0;
+          width:10vw;
+        }
+        li:nth-child(even){
+          margin: 5em 5em 0 0;
+        }
+      }
+    }
   }
   
