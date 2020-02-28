@@ -258,6 +258,35 @@ footer a {
   text-align: center;
 }
 
+.zen-resources {
+  margin: 1em 2%;
+}
+.zen-resources ul {
+  display: flex;
+  flex-direction: row;
+  font-size: 0.75em;
+  text-align: center;
+}
+.zen-resources li:nth-child(odd) {
+  margin: 2em 2em 0 0;
+  width: 20vw;
+}
+.zen-resources li:nth-child(even) {
+  margin: 5em 2em 0 0;
+}
+@media only screen and (min-width: 50em) {
+  .zen-resources ul {
+    font-size: 1.2em;
+  }
+  .zen-resources ul li:nth-child(odd) {
+    margin: 2em 5em 0 0;
+    width: 10vw;
+  }
+  .zen-resources ul li:nth-child(even) {
+    margin: 5em 5em 0 0;
+  }
+}
+
 /* -------------------------------- 
 
 xNavigation 
