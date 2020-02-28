@@ -263,43 +263,43 @@ footer a {
 xNavigation 
 
 -------------------------------- */
-.cd-main-nav, .cd-primary-nav {
+nav {
   /* main navigation background color - full screen on small devices */
   background: white;
 }
-.cd-main-nav li:nth-child(1), .cd-primary-nav li:nth-child(1) {
+nav li:nth-child(1) {
   background-color: #412312;
 }
-.cd-main-nav li:nth-child(2), .cd-primary-nav li:nth-child(2) {
+nav li:nth-child(2) {
   background-color: #1f110b;
 }
-.cd-main-nav li:nth-child(3), .cd-primary-nav li:nth-child(3) {
+nav li:nth-child(3) {
   background-color: #89010F;
 }
-.cd-main-nav li:nth-child(4), .cd-primary-nav li:nth-child(4) {
+nav li:nth-child(4) {
   background-color: #5F3916;
 }
-.cd-main-nav li:nth-child(5), .cd-primary-nav li:nth-child(5) {
+nav li:nth-child(5) {
   background-color: #C7B299;
 }
-.cd-main-nav li:nth-child(6), .cd-primary-nav li:nth-child(6) {
+nav li:nth-child(6) {
   background-color: #1f110b;
 }
-.cd-main-nav li:nth-child(7), .cd-primary-nav li:nth-child(7) {
+nav li:nth-child(7) {
   background-color: #412312;
 }
-.cd-main-nav li:nth-child(8), .cd-primary-nav li:nth-child(8) {
+nav li:nth-child(8) {
   background-color: #5F3916;
 }
-.cd-main-nav li a, .cd-primary-nav li a {
+nav li a {
   color: #C7B299;
   border-color: #1f110b;
 }
 @media only screen and (min-width: 46.8em) {
-  .cd-main-nav li a, .cd-primary-nav li a {
+  nav li a {
     color: #C7B299;
   }
-  .cd-main-nav li a.selected, .cd-primary-nav li a.selected {
+  nav li a.selected {
     color: #5F3916;
     box-shadow: 0 2px 0 #1f110b;
   }
@@ -413,6 +413,11 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
+}
+@media only screen and (min-width: 46.8em) {
+  body {
+    padding: 2rem;
+  }
 }
 
 a {
