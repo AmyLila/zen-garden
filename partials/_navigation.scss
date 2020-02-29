@@ -17,6 +17,7 @@ Styling for the design selection section
 .design-selection nav {
     /* main navigation background color - full screen on small devices */
     border-radius: 5px;
+    border-image: url(assets/wood-01.svg) 25 25 round;
     padding-top:1rem;
     margin-bottom: 2rem;
     background-image:linear-gradient(to bottom, rgba($color-med, 9.5), rgba($color-darkest,9.5));
