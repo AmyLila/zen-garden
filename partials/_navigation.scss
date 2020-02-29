@@ -4,13 +4,19 @@ Navigation
 
 -------------------------------- */
 //navigation.scss
+
+/* -------------------------------- 
+
+Styling for the design selection section 
+
+-------------------------------- */
 .design-selection h3{
   font-size: 2rem;
   padding:1rem;
 }
 .design-selection nav {
     /* main navigation background color - full screen on small devices */
-    background:transparent;
+    background:orangered;
     width:100%;
  
     li:nth-child(1) {
@@ -107,16 +113,19 @@ Navigation
 
   /* -------------------------------- 
 
-Spacing for bookshelf
+Background and Spacing for bookshelf
 
 -------------------------------- */
 .design-selection{
   width:100%
+  url(assets/sherlock.svg);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: $sherlock-width $sherlock-height;
 }
 //placeholder for bookshelf
 .design-selection ul::before{
   content: "";
-  background-color: yellow;
   @include navCol(2); 
     
 } 
@@ -124,6 +133,5 @@ Spacing for bookshelf
 .design-selection ul::after{
   content: "";
   @include navCol(2);
-  background-color: yellowgreen;
 } 
 
