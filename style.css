@@ -233,23 +233,24 @@ Styling for the design selection section
 
 /* -------------------------------- 
 
-Spacing for bookshelf
+Background and Spacing for bookshelf
 
 -------------------------------- */
 .design-selection {
   width: 100%;
+  background-image: url(assets/brown-01.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .design-selection ul::before {
   content: "";
-  background-color: black;
   flex: 1 0 16.6666666667%;
 }
 
 .design-selection ul::after {
   content: "";
   flex: 1 0 16.6666666667%;
-  background-color: white;
 }
 
 /* -------------------------------- 

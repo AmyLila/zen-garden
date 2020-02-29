@@ -117,11 +117,10 @@ Background and Spacing for bookshelf
 
 -------------------------------- */
 .design-selection{
-  width:100%
-  url(assets/sherlock.svg);
+  width:100%;
+  background-image:url(assets/brown-01.svg);
   background-repeat: no-repeat;
-  background-size: 250px;
-  background-position: $sherlock-width $sherlock-height;
+  background-size:cover;
 }
 //placeholder for bookshelf
 .design-selection ul::before{
