@@ -415,10 +415,38 @@ footer a {
   }
 }
 
+.design-archives {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+}
+.design-archives ul {
+  display: flex;
+  flex-direction: row wrap;
+  text-align: center;
+  justify-content: space-between;
+}
+.design-archives ul li {
+  flex: 0 0 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .zen-resources {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
   margin: 1em 2%;
 }
 .zen-resources ul {
+  overflow: scroll;
+  width: 100%;
   display: flex;
   flex-direction: row;
   text-align: center;
