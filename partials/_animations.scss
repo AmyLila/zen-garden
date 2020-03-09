@@ -90,7 +90,7 @@ body::after {
 Foot Prints
 
 -------------------------------- */    
-.explanation{
+.explanation, .benefits{
   position: relative;
   overflow: hidden;
   background-image: 
@@ -105,7 +105,7 @@ Foot Prints
 
 }
 
-.explanation::before {
+.explanation::before, .benefits::before {
   content: ""url(assets/foot-print-02.svg);
   display: block;
   position: absolute;
@@ -113,23 +113,13 @@ Foot Prints
   width:40px;
   height:25px;
   bottom:15px;
-  left: 0px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
-  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  left: 10px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
+  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
   
-
-  @include MQ(M){
-    bottom:15px;
-    left: 0px;
-  }
-  @include MQ(L){
-    bottom:15px;
-    left:0px;
-  }
-
 }
 
-.explanation::after {
+.explanation::after, .benefits::after{
   content: ""url(assets/foot-print-01.svg);
   display: block;
   position: absolute;
@@ -137,19 +127,10 @@ Foot Prints
   width:40px;
   height:25px;
   bottom:20px;
-  left: 10px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
-  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  left: 20px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
+  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
   animation-delay:1s;
-
-  @include MQ(M){
-    bottom:20px;
-    left: 10px;
-  }
-  @include MQ(L){
-    bottom:20px;
-    left:10px;
-  }
 
 }
 

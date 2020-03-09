@@ -1239,7 +1239,7 @@ body::before {
 Foot Prints
 
 -------------------------------- */
-.explanation {
+.explanation, .benefits {
   position: relative;
   overflow: hidden;
   background-image: url(assets/foot-print-02.svg), url(assets/foot-print-01.svg);
@@ -1248,7 +1248,7 @@ Foot Prints
   background-repeat: no-repeat;
 }
 
-.explanation::before {
+.explanation::before, .benefits::before {
   content: "" url(assets/foot-print-02.svg);
   display: block;
   position: absolute;
@@ -1256,24 +1256,12 @@ Foot Prints
   width: 40px;
   height: 25px;
   bottom: 15px;
-  left: 0px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
-  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
-}
-@media only screen and (min-width: 46.8em) {
-  .explanation::before {
-    bottom: 15px;
-    left: 0px;
-  }
-}
-@media only screen and (min-width: 50em) {
-  .explanation::before {
-    bottom: 15px;
-    left: 0px;
-  }
+  left: 10px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
+  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
 }
 
-.explanation::after {
+.explanation::after, .benefits::after {
   content: "" url(assets/foot-print-01.svg);
   display: block;
   position: absolute;
@@ -1281,22 +1269,10 @@ Foot Prints
   width: 40px;
   height: 25px;
   bottom: 20px;
-  left: 10px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
-  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  left: 20px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
+  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
   animation-delay: 1s;
-}
-@media only screen and (min-width: 46.8em) {
-  .explanation::after {
-    bottom: 20px;
-    left: 10px;
-  }
-}
-@media only screen and (min-width: 50em) {
-  .explanation::after {
-    bottom: 20px;
-    left: 10px;
-  }
 }
 
 @-webkit-keyframes moveFeet {
