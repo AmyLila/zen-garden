@@ -121,7 +121,7 @@ Navigation
 -------------------------------- */
 /* -------------------------------- 
 
-Styling for the design selection section 
+Styling for the design selection section (bookshelf)
 
 -------------------------------- */
 .design-selection h3 {
@@ -136,91 +136,122 @@ Styling for the design selection section
   padding-top: 1rem;
   margin-bottom: 2rem;
   background-image: linear-gradient(to bottom, rgba(95, 57, 22, 0.7), rgba(31, 17, 11, 0.7)), url("assets/wood-01.svg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0, 0, 0, 0);
   box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0, 0, 0, 0);
   width: 100%;
 }
+.design-selection nav li {
+  transition: all 0.2s ease-in-out;
+}
+.design-selection nav li:hover {
+  transform: scale(1.1);
+  border-radius: 5px;
+}
 .design-selection nav li:nth-child(1) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #412312;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #cf7e50;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(1) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(2) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #1f110b;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #b66440;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(2) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(3) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #89010F;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #bc0115;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(3) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(4) {
+  margin: 0 1px 0 0;
   padding: 3rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
   background-color: #5F3916;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(4) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(5) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #C7B299;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #cf7e50;
 }
 .design-selection nav li:nth-child(5) a {
   color: #1f110b;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(5) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(6) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #1f110b;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #904f33;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(6) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(7) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #412312;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #a20112;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(7) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav li:nth-child(8) {
+  margin: 0 1px 0 0;
   padding: 3rem;
-  background-color: #5F3916;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-color: #cf7e50;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(8) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -1201,6 +1232,107 @@ body::before {
     transform: translate(0, 0) scale(1);
     opacity: 1;
     filter: blur(5px);
+  }
+}
+/* -------------------------------- 
+
+Foot Prints
+
+-------------------------------- */
+.explanation {
+  position: relative;
+  overflow: hidden;
+  background-image: url(assets/foot-print-02.svg), url(assets/foot-print-01.svg);
+  background-position: bottom 15px right 10px, bottom 20px right 0px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+}
+
+.explanation::before {
+  content: "" url(assets/foot-print-02.svg);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 25px;
+  bottom: 15px;
+  left: 0px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+}
+@media only screen and (min-width: 46.8em) {
+  .explanation::before {
+    bottom: 15px;
+    left: 0px;
+  }
+}
+@media only screen and (min-width: 50em) {
+  .explanation::before {
+    bottom: 15px;
+    left: 0px;
+  }
+}
+
+.explanation::after {
+  content: "" url(assets/foot-print-01.svg);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width: 40px;
+  height: 25px;
+  bottom: 20px;
+  left: 10px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation-delay: 1s;
+}
+@media only screen and (min-width: 46.8em) {
+  .explanation::after {
+    bottom: 20px;
+    left: 10px;
+  }
+}
+@media only screen and (min-width: 50em) {
+  .explanation::after {
+    bottom: 20px;
+    left: 10px;
+  }
+}
+
+@-webkit-keyframes moveFeet {
+  100% {
+    transform: translate(0, -500px);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes moveFeet {
+  100% {
+    transform: translate(0, -500px);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+}
+@-webkit-keyframes fadeFeet {
+  100% {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  0% {
+    opacity: 1;
+    filter: blur(1px);
+  }
+}
+@keyframes fadeFeet {
+  100% {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  0% {
+    opacity: 1;
+    filter: blur(1px);
   }
 }
 

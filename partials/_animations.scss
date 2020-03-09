@@ -85,3 +85,119 @@ body::after {
    
     }
   
+ /* -------------------------------- 
+
+Foot Prints
+
+-------------------------------- */    
+.explanation{
+  position: relative;
+  overflow: hidden;
+  background-image: 
+  url(assets/foot-print-02.svg), 
+  url(assets/foot-print-01.svg);
+  background-position: 
+  bottom 15px right 10px,
+  bottom 20px right 0px;
+  background-size: 40px;
+  background-repeat: no-repeat;
+
+
+}
+
+.explanation::before {
+  content: ""url(assets/foot-print-02.svg);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width:40px;
+  height:25px;
+  bottom:15px;
+  left: 0px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  
+
+  @include MQ(M){
+    bottom:15px;
+    left: 0px;
+  }
+  @include MQ(L){
+    bottom:15px;
+    left:0px;
+  }
+
+}
+
+.explanation::after {
+  content: ""url(assets/foot-print-01.svg);
+  display: block;
+  position: absolute;
+  opacity: 0;
+  width:40px;
+  height:25px;
+  bottom:20px;
+  left: 10px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation: moveFeet 10s linear 10, fadeFeet 2s infinite;
+  animation-delay:1s;
+
+  @include MQ(M){
+    bottom:20px;
+    left: 10px;
+  }
+  @include MQ(L){
+    bottom:20px;
+    left:10px;
+  }
+
+}
+
+@-webkit-keyframes moveFeet {
+  100% {
+    transform: translate(0,-500px);
+
+  }
+  0% {
+    transform: translate(0,0);
+
+  }
+
+}  
+@keyframes moveFeet {
+  100% {
+    transform: translate(0,-500px);
+
+  }
+  0% {
+    transform: translate(0,0);
+ 
+  }
+
+}
+
+@-webkit-keyframes fadeFeet {
+  100% {
+    opacity: 0;
+    filter: blur(2px);
+
+  }
+  0% {
+    opacity: 1;
+    filter: blur(1px);
+
+  }
+
+}  
+@keyframes fadeFeet {
+  100% {
+    opacity: 0;
+    filter: blur(2px);
+  }
+  0% {
+    opacity: 1;
+    filter: blur(1px);
+
+  }
+
+}

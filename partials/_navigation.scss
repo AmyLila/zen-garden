@@ -7,13 +7,14 @@ Navigation
 
 /* -------------------------------- 
 
-Styling for the design selection section 
+Styling for the design selection section (bookshelf)
 
 -------------------------------- */
 .design-selection h3{
   font-size: 2rem;
   padding:1rem;
 }
+// bookshelf
 .design-selection nav {
     /* main navigation background color - full screen on small devices */
     border: 20px solid;
@@ -22,77 +23,108 @@ Styling for the design selection section
     margin-bottom: 2rem;
     background-image: linear-gradient(to bottom, rgba($color-med, 0.7), rgba($color-darkest,0.7)),
     url("assets/wood-01.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0,0,0,0); 
     box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0,0,0,0);
-
-    // background:orangered;
     width:100%;
+
+    li{
+      transition: all .2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      border-radius: 5px;
+    }}
  
+    // books
     li:nth-child(1) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-dark;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-dark, 40%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(2) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-darkest;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-darkest, 40%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(3) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-accent;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-accent, 10%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(4) {
+      margin:0 1px 0 0;
       padding:3rem;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
       background-color: $color-med;
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(5) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-light;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-dark, 40%);
       
       //text color 
       a{color:$color-darkest;}
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(6) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-darkest;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-darkest, 30%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(7) {
+      margin:0 1px 0 0;
       padding:3rem;
-      background-color: $color-dark;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-accent, 5%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
     }
     li:nth-child(8) {
+      margin:0 1px 0 0 ;
       padding:3rem;
-      background-color: $color-med;
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.5) 85%);
+      background-color: lighten($color-dark, 40%);
       @include MQ(M){
+        background-image: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0,0.8));
         writing-mode: vertical-rl;
         padding: 2rem;
       }
