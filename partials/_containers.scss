@@ -60,14 +60,18 @@ Containers
  }
 
  .preamble{
-   text-align: right;
    margin:10rem 0 1rem 0; 
 
    @include MQ(M){
     margin: 5% 2% 2% 45% ;
     width: 55%;
 }
+
   @include MQ(L){
+    margin: 5% 2% 2% 50% ;
+    width: 45%;
+}
+  @include MQ(XL){
     margin: 5% 2% 2% 40% ;
     width: 60%;
 }
