@@ -14,7 +14,7 @@ body::after {
     background-color: transparent;
     top:350px;
     left: 205px;
-    -webkit-animation: animateSmoke 6s linear 10;
+    -webkit-animation: animateSmoke 6s ease-out 10;
     animation: animateSmoke 6s linear 10;
     animation-delay: 2.5s;
 
@@ -44,7 +44,7 @@ body::after {
       background-color: $color-darkest;
       top:350px;
       left:205px;
-      -webkit-animation: animateSmoke 6s linear 10;
+      -webkit-animation: animateSmoke 6s ease-out 10;
       animation: animateSmoke 6s linear 10;
 
 
@@ -105,6 +105,7 @@ Foot Prints
 
 }
 
+//Left Foot
 .explanation::before, .benefits::before {
   content: ""url(assets/foot-print-02.svg);
   display: block;
@@ -114,11 +115,11 @@ Foot Prints
   height:25px;
   bottom:15px;
   left: 10px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
-  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
+  -webkit-animation: moveLeft 10s linear 10, fadeFeet 1.5s 50;
+  animation: moveLeft 10s linear 10, fadeFeet 1.5s 50;
   
 }
-
+// Right Foot
 .explanation::after, .benefits::after{
   content: ""url(assets/foot-print-01.svg);
   display: block;
@@ -126,17 +127,40 @@ Foot Prints
   opacity: 0;
   width:40px;
   height:25px;
-  bottom:20px;
-  left: 20px;
-  -webkit-animation: moveFeet 10s linear 10, fadeFeet 2s 50;
-  animation: moveFeet 10s linear 10, fadeFeet 2s 50;
-  animation-delay:1s;
+  bottom:25px;
+  left: 25px;
+  -webkit-animation: moveFeet 10s linear 10, fadeFeet 1.5s 1s 50;
+  animation: moveFeet 10s linear 10, fadeFeet 1.5s 1s 50;
 
 }
 
+@-webkit-keyframes moveLeft {
+  100% {
+    transform: translate(0,-30em);
+
+  }
+  0% {
+    transform: translate(0,0);
+
+  }
+
+}  
+@keyframes moveLeft {
+  100% {
+    transform: translate(0,-30em);
+
+  }
+  0% {
+    transform: translate(0,0);
+ 
+  }
+
+}
+
+
 @-webkit-keyframes moveFeet {
   100% {
-    transform: translate(0,-500px);
+    transform: translate(0,-30em);
 
   }
   0% {
@@ -147,7 +171,7 @@ Foot Prints
 }  
 @keyframes moveFeet {
   100% {
-    transform: translate(0,-500px);
+    transform: translate(0,-30em);
 
   }
   0% {
