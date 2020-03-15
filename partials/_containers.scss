@@ -190,19 +190,30 @@ note mixins and variables are in the variables partial
   
   .zen-resources{
     text-align: center;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-    width:100%;
-    margin:1em 2%;
+    width:70%;
+    margin:2em auto;
+    h3{
+      margin-bottom:2em;
+    }
     
     ul {
-      overflow: scroll;
-      width:100%;
+      position:relative;
+      left:3%;
+      overflow: none;
+      width:90%;
       display:flex;
       flex-direction:row;
+      justify-content:space-evenly;
       text-align:center;
+      margin:0 auto;
+      li{
+        a{
+          color:$color-accent;
+          abbr{
+            text-decoration:none;
+          }
+        }
+      }
      } 
     li:nth-child(odd){
       margin: 2em 2em 0 0;
@@ -214,9 +225,10 @@ note mixins and variables are in the variables partial
     @include MQ(L){
       ul{
         font-size:1.2em;
+        left:5%;
         li:nth-child(odd){
           margin:2em 5em 0 0;
-          width:10vw;
+          width:11vw;
         }
         li:nth-child(even){
           margin: 5em 5em 0 0;
@@ -224,4 +236,28 @@ note mixins and variables are in the variables partial
       }
     }
   }
-  
+  .view-css::after,.zen-faq::after,
+ .zen-translations::after{
+ content:""url(assets/magnifying_glass.png);
+ display:block;
+ position:relative;
+ margin:1em 0;
+ width:10px;
+ right:2em;
+ @include MQ(XL){
+   right:1em;
+   left:.3em;
+ }
+ @include MQ(M){
+   right:2em;
+ }
+} 
+.css-resources::after, .zen-submit::after{
+  content:""url(assets/magnifying_glass.png);
+ display:block;
+ position:absolute;
+ top:-.3em;
+ @include MQ(L){
+   
+ }
+} 
