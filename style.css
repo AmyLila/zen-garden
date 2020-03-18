@@ -429,6 +429,7 @@ note mixins and variables are in the variables partial
 }
 
 .requirements p:nth-child(6) {
+  text-align: center;
   width: 55%;
   margin: 3em auto;
   background-color: #C7B299;
@@ -442,7 +443,7 @@ note mixins and variables are in the variables partial
 
 .requirements::before {
   content: "" url(assets/bullet-hole-05.svg);
-  float: right;
+  float: left;
   margin: 2%;
   width: 40%;
   clip-path: circle();

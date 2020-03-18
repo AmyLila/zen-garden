@@ -133,6 +133,7 @@ note mixins and variables are in the variables partial
       @include MQ(L){
         width:100%;
       }
+      text-align: center;
       width:55%;
       margin:3em auto;
       background-color:$color-light;
@@ -141,7 +142,7 @@ note mixins and variables are in the variables partial
   }
   .requirements::before{
     content: ""url(assets/bullet-hole-05.svg);
-    float:right;
+    float:left;
     margin:2%;
     width:40%;
     clip-path: circle();
