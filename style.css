@@ -407,25 +407,25 @@ note mixins and variables are in the variables partial
   margin: 1em auto;
 }
 
+.participation::before {
+  content: "" url(assets/bullet-hole-03.svg);
+  float: right;
+  margin: 2%;
+  width: 40%;
+  clip-path: circle();
+  shape-outside: circle();
+}
+
 .participation, .requirements {
   padding-left: 2%;
 }
 @media only screen and (min-width: 50em) {
   .participation, .requirements {
-    flex: 0 0 66.6666666667%;
     text-align: left;
   }
 }
 .participation p, .requirements p {
   margin: 1em 0;
-}
-
-@media only screen and (min-width: 50em) {
-  .benefits {
-    flex: 0 0 66.6666666667%;
-    margin-left: 33.3333333333%;
-    text-align: right;
-  }
 }
 
 .requirements p:nth-child(6) {
@@ -438,6 +438,15 @@ note mixins and variables are in the variables partial
   .requirements p:nth-child(6) {
     width: 100%;
   }
+}
+
+.requirements::before {
+  content: "" url(assets/bullet-hole-05.svg);
+  float: right;
+  margin: 2%;
+  width: 40%;
+  clip-path: circle();
+  shape-outside: circle();
 }
 
 footer {

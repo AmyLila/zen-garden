@@ -104,10 +104,17 @@ note mixins and variables are in the variables partial
    }
 
   }
+.participation::before{
+  content: ""url(assets/bullet-hole-03.svg);
+  float:right;
+  margin:2%;
+  width:40%;
+  clip-path: circle();
+  shape-outside: circle();
+}  
 
   .participation, .requirements{
     @include MQ(L){
-      @include col(2);
       text-align: left;
     }
 
@@ -118,9 +125,6 @@ note mixins and variables are in the variables partial
   }
   .benefits{
     @include MQ(L){
-      @include col(2);
-      @include offset(1);
-      text-align: right;
     }
   }
 
@@ -135,6 +139,14 @@ note mixins and variables are in the variables partial
       padding: 1rem;
     }
   }
+  .requirements::before{
+    content: ""url(assets/bullet-hole-05.svg);
+    float:right;
+    margin:2%;
+    width:40%;
+    clip-path: circle();
+    shape-outside: circle();
+  } 
   footer{
     @include col(3);
     display:flex;
