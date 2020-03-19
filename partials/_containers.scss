@@ -108,8 +108,7 @@ note mixins and variables are in the variables partial
   content: ""url(assets/bullet-hole-03.svg);
   float:right;
   margin:2%;
-  width:40%;
-  clip-path: circle();
+  width:30%;
   shape-outside: circle();
 }  
 
@@ -141,12 +140,12 @@ note mixins and variables are in the variables partial
     }
   }
   .requirements::before{
-    content: ""url(assets/bullet-hole-05.svg);
+    content: ""url(assets/bullet-hole-04.svg);
+    
     float:left;
     margin:2%;
-    width:40%;
-    clip-path: circle();
-    shape-outside: circle();
+    width:30%;
+    shape-outside: ellipse();
   } 
   footer{
     @include col(3);
