@@ -43,7 +43,11 @@ h3{
     text-decoration: none;
     color: $color-accent;
 }
-
+.select, .archives{
+  color:$color-light;
+  font-size: 3rem;
+  padding: 1rem;
+}
 section > h2::before {
   /* number before each section title */
   color: $color-darkest;

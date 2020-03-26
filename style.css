@@ -56,6 +56,11 @@ table {
 /*end reset.scss*/
 /* -------------------------------- 
 
+Colors
+
+-------------------------------- */
+/* -------------------------------- 
+
 Sherlock and smoke variables
 
 -------------------------------- */
@@ -67,11 +72,6 @@ Sherlock and smoke variables
 /* -------------------------------- 
 
 12 cloumn grid layout
-
--------------------------------- */
-/* -------------------------------- 
-
-Colors
 
 -------------------------------- */
 /* -------------------------------- 
@@ -132,11 +132,6 @@ Navigation
 Styling for the design selection section (bookshelf)
 
 -------------------------------- */
-.design-selection h3 {
-  font-size: 2rem;
-  padding: 1rem;
-}
-
 .design-selection nav {
   /* main navigation background color - full screen on small devices */
   border: 20px solid;
@@ -146,12 +141,14 @@ Styling for the design selection section (bookshelf)
   background-image: linear-gradient(to bottom, rgba(95, 57, 22, 0.7), rgba(31, 17, 11, 0.7)), url("assets/wood-01.svg");
   background-repeat: repeat;
   background-size: cover;
-  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0, 0, 0, 0);
-  box-shadow: 0px 10px 13px -7px #000000, 0px 16px 9px 23px rgba(0, 0, 0, 0);
+  -webkit-box-shadow: 0 10px 13px -7px #000000, 0 16px 9px 23px rgba(0, 0, 0, 0);
+  box-shadow: 0 10px 13px -7px #000000, 0 16px 9px 23px rgba(0, 0, 0, 0);
   width: 100%;
 }
 .design-selection nav li {
   transition: all 0.2s ease-in-out;
+  color: #C7B299;
+  font-size: 0.8rem;
 }
 .design-selection nav li:hover {
   transform: scale(1.1);
@@ -215,9 +212,6 @@ Styling for the design selection section (bookshelf)
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
   background-color: #cf7e50;
 }
-.design-selection nav li:nth-child(5) a {
-  color: #1f110b;
-}
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(5) {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
@@ -263,6 +257,15 @@ Styling for the design selection section (bookshelf)
     writing-mode: vertical-rl;
     padding: 2rem;
   }
+}
+.design-selection nav .design-name {
+  font-family: "Jim Nightshade", cursive;
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  letter-spacing: 0.3rem;
+}
+.design-selection nav .designer-name {
+  margin: 0.5rem;
 }
 .design-selection nav li a {
   color: #C7B299;
@@ -324,7 +327,7 @@ Containers
 }
 
 .intro, .preamble, .participation, .benefits, .requirements {
-  margin: 4em 0 1em 0;
+  margin: 4em 0 0 0;
   width: 100%;
 }
 
@@ -396,6 +399,7 @@ note mixins and variables are in the variables partial
   background-color: #C7B299;
   width: 100%;
   padding: 1rem;
+  border-radius: 5px;
 }
 @media only screen and (min-width: 50em) {
   .explanation, .benefits {
@@ -414,14 +418,15 @@ note mixins and variables are in the variables partial
   width: 30%;
   shape-outside: circle();
 }
+@media only screen and (min-width: 46.8em) {
+  .participation::before {
+    content: "" url(assets/bullet-hole-multi-03.svg);
+  }
+}
 
 .participation, .requirements {
+  padding-right: 2%;
   padding-left: 2%;
-}
-@media only screen and (min-width: 50em) {
-  .participation, .requirements {
-    text-align: left;
-  }
 }
 .participation p, .requirements p {
   margin: 1em 0;
@@ -430,9 +435,10 @@ note mixins and variables are in the variables partial
 .requirements p:nth-child(6) {
   text-align: center;
   width: 55%;
-  margin: 3em auto;
+  margin: 3em auto 1em auto;
   background-color: #C7B299;
   padding: 1rem;
+  border-radius: 5px;
 }
 @media only screen and (min-width: 50em) {
   .requirements p:nth-child(6) {
@@ -452,11 +458,10 @@ footer {
   flex: 0 0 100%;
   display: flex;
   flex-flow: row;
+  justify-content: space-evenly;
 }
 footer a {
-  flex: 0 0 20%;
-  margin: 0 auto;
-  text-align: center;
+  flex: 1 1 auto;
 }
 
 .sidebar {
@@ -469,6 +474,10 @@ footer a {
   flex-flow: column;
   align-content: center;
   justify-content: center;
+  padding: 1rem;
+  background-color: #89010F;
+  margin: 1rem 0;
+  border-radius: 5px;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection ul {
@@ -485,23 +494,39 @@ footer a {
   align-content: center;
   justify-content: center;
   width: 100%;
+  padding: 1rem 1rem 3rem 1rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.3));
+  background-color: #89010F;
+  border-radius: 5px;
 }
 .design-archives ul {
   display: flex;
   flex-direction: row wrap;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .design-archives ul li {
-  flex: 0 0 50%;
+  flex: 1 1 auto;
   margin: 0 auto;
+  padding: 1rem;
+}
+.design-archives ul li a {
   text-align: center;
+  padding: 1rem;
+  border-radius: 10px;
+  color: #C7B299;
+  transition: 0.5s;
+}
+.design-archives ul li a:hover {
+  background-color: #C7B299;
+  color: #89010F;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .zen-resources {
   text-align: center;
   width: 70%;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 .zen-resources h3 {
   margin-bottom: 2em;
@@ -633,6 +658,12 @@ h3 {
   font-weight: 250;
   text-decoration: none;
   color: #89010F;
+}
+
+.select, .archives {
+  color: #C7B299;
+  font-size: 3rem;
+  padding: 1rem;
 }
 
 section > h2::before {
@@ -1391,6 +1422,29 @@ Foot Prints
     opacity: 1;
     filter: blur(1px);
   }
+}
+/* -------------------------------- 
+
+footer
+
+-------------------------------- */
+footer {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+footer a {
+  background-color: #C7B299;
+  border-radius: 10px;
+  color: #1f110b;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  transition: 0.5s;
+}
+footer a:hover {
+  background-color: #89010F;
+  color: #C7B299;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*# sourceMappingURL=style.css.map */
