@@ -113,7 +113,7 @@ note mixins and variables are in the variables partial
   shape-outside: circle();
 
   @include MQ(M){
-    content: ""url(assets/bullet-hole-multi-03.svg);
+    content: ""url(assets/bullet-holes-multi-03.svg);
   }
 }  
 
@@ -149,6 +149,10 @@ note mixins and variables are in the variables partial
     margin:2%;
     width:30%;
     shape-outside: ellipse();
+
+    @include MQ(M){
+      content: ""url(assets/multi-bullet-holes-03.svg);
+    }
   } 
   footer{
     @include col(3);

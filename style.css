@@ -420,7 +420,7 @@ note mixins and variables are in the variables partial
 }
 @media only screen and (min-width: 46.8em) {
   .participation::before {
-    content: "" url(assets/bullet-hole-multi-03.svg);
+    content: "" url(assets/bullet-holes-multi-03.svg);
   }
 }
 
@@ -452,6 +452,11 @@ note mixins and variables are in the variables partial
   margin: 2%;
   width: 30%;
   shape-outside: ellipse();
+}
+@media only screen and (min-width: 46.8em) {
+  .requirements::before {
+    content: "" url(assets/multi-bullet-holes-03.svg);
+  }
 }
 
 footer {
