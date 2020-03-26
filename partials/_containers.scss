@@ -113,7 +113,9 @@ note mixins and variables are in the variables partial
   shape-outside: circle();
 
   @include MQ(M){
-    content: ""url(assets/bullet-holes-multi-03.svg);
+    content: ""url(assets/bullet-holes-multi-3.svg);
+    shape-outside: ellipse();
+    width:20%;
   }
 }  
 
@@ -131,11 +133,12 @@ note mixins and variables are in the variables partial
 
   .requirements{
     p:nth-child(6){
-      @include MQ(L){
-        width:100%;
+      @include MQ(M){
+      width:80%;
+      margin:3em auto 1em 20%;
       }
       text-align: center;
-      width:55%;
+      width:100%;
       margin:3em auto 1em auto;
       background-color:$color-light;
       padding: 1rem;
@@ -144,14 +147,16 @@ note mixins and variables are in the variables partial
   }
   .requirements::before{
     content: ""url(assets/bullet-hole-04.svg);
-    
     float:left;
-    margin:2%;
+    margin:1rem;
     width:30%;
     shape-outside: ellipse();
 
     @include MQ(M){
-      content: ""url(assets/multi-bullet-holes-03.svg);
+      content: ""url(assets/bullet-holes-multi-2.svg);
+      width:20%;
+      padding:1rem;
+      margin:1rem 1rem 0 0;
     }
   } 
   footer{
