@@ -105,6 +105,7 @@ Body Styling
 
 -------------------------------- */
 body {
+  overflow: auto;
   /* this is the page background*/
   background: url(assets/sherlock.svg);
   background-repeat: no-repeat;
@@ -477,6 +478,14 @@ footer a {
 
 .sidebar {
   width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
 }
 
 .design-selection {

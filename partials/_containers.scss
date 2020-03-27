@@ -170,9 +170,15 @@ note mixins and variables are in the variables partial
     }
 
     }
-
 .sidebar{
   width:100%;
+}
+.wrapper{
+  width:100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
 }    
 .design-selection{
   text-align: center;
