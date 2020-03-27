@@ -25,18 +25,3 @@
   -moz-transition: $options;
   transition: $options;
 }
-
-@mixin user-select($options) {
-    -webkit-user-select: $options;
-  -moz-user-select: $options;
-  -ms-user-select: $options;
-  user-select: $options;
-}
-
-@mixin appearance($option) {
-    -webkit-appearance: $option;
-  -moz-appearance: $option;
-  -ms-appearance: $option;
-  -o-appearance: $option;
-  appearance: $option;
-}

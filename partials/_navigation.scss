@@ -3,7 +3,7 @@
 Navigation 
 
 -------------------------------- */
-//navigation.scss
+
 
 /* -------------------------------- 
 
@@ -27,12 +27,12 @@ Styling for the design selection section (bookshelf)
     width:100%;
 
     li{
-      transition: all .2s ease-in-out;
+      @include transition(all .2s ease-in-out);
       color: $color-light;
       font-size: .8rem;
 
     &:hover {
-      transform: scale(1.1);
+      @include transform(scale(1.1));
       border-radius: 5px;
     }}
  
@@ -127,6 +127,7 @@ Styling for the design selection section (bookshelf)
       }
     }
     
+// Type on the bookshelf    
   .design-name{
     font-family:$display-font;
     font-size: 2rem;

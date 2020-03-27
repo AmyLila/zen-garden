@@ -27,8 +27,8 @@ body::after {
       left:329px;
     }
 
+}
 
-  }
   /* -------------------------------- 
   
   Smoke Circle
@@ -56,29 +56,18 @@ body::after {
       top:520px;
       left:329px;
     }
+}
 
-    }
-    @-webkit-keyframes animateSmoke {
-      100% {
-        transform: translate(100px, -500px) scale(3.5);
-        opacity: 0;
-        filter: blur(5px);
-      }
-      0% {
-        transform: translate(0,0) scale(1);
-        opacity: 1;
-        filter: blur(5px)
-      }
-  
-    }  
     @keyframes animateSmoke {
       100% {
+        @include transform(translate(100px, -500px) scale(3.5));
         transform: translate(100px, -500px) scale(3.5);
         opacity: 0;
         filter: blur(5px);
       }
       0% {
-        transform: translate(0,0) scale(1);
+        @include transform(translate(0,0) scale(1));
+        // transform: translate(0,0) scale(1);
         opacity: 1;
         filter: blur(5px)
       }
@@ -135,51 +124,25 @@ Foot Prints
 
 }
 
-@-webkit-keyframes moveLeft {
-  100% {
-    transform: translate(0,-30em);
-
-  }
-  0% {
-    transform: translate(0,0);
-
-  }
-
-}  
 @keyframes moveLeft {
   100% {
-    transform: translate(0,-30em);
-
+    @include transform(translate(0,-30em));
   }
   0% {
-    transform: translate(0,0);
- 
+    @include transform(translate(0,0));
   }
 
 }
 
-
-@-webkit-keyframes moveFeet {
-  100% {
-    transform: translate(0,-30em);
-
-  }
-  0% {
-    transform: translate(0,0);
-
-  }
-
-}  
 @keyframes moveFeet {
   100% {
-    transform: translate(0,-30em);
+    @include transform(translate(0,-30em));
 
   }
   0% {
-    transform: translate(0,0);
- 
+    @include transform(translate(0,0));
+    
   }
-
 }
 
 @-webkit-keyframes fadeFeet {

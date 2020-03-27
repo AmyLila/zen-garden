@@ -79,17 +79,15 @@ Containers
     margin: 1em 0; 
    }
  } 
-/* -------------------------------- 
 
-note mixins and variables are in the variables partial
 
--------------------------------- */
 // Layout for the bottom half of page 
 .main-supporting{
   display:flex;
   flex-flow: row wrap;
 }
-  .explanation, .benefits{
+
+.explanation, .benefits{
     background-color:$color-light;
     width:100%;
     padding: 1rem;
@@ -104,7 +102,8 @@ note mixins and variables are in the variables partial
     margin:1em auto;
    }
 
-  }
+}
+
 .participation::before{
   content: ""url(assets/bullet-hole-03.svg);
   float:right;
@@ -119,33 +118,36 @@ note mixins and variables are in the variables partial
   }
 }  
 
-  .participation, .requirements{
+.participation, .requirements{
     padding-right: 2%;
     padding-left:2%;
     p{
       margin:1em 0;
     }
-  }
-  .benefits{
+}
+
+.benefits{
     @include MQ(L){
     }
   }
 
-  .requirements{
-    p:nth-child(6){
+.requirements{
+  p:nth-child(6){
       @include MQ(M){
       width:80%;
       margin:3em auto 1em 20%;
       }
-      text-align: center;
-      width:100%;
-      margin:3em auto 1em auto;
-      background-color:$color-light;
-      padding: 1rem;
-      border-radius: 5px;
+
+    text-align: center;
+    width:100%;
+    margin:3em auto 1em auto;
+    background-color:$color-light;
+    padding: 1rem;
+    border-radius: 5px;
     }
-  }
-  .requirements::before{
+}
+
+.requirements::before{
     content: ""url(assets/bullet-hole-04.svg);
     float:left;
     margin:1rem;
@@ -158,18 +160,19 @@ note mixins and variables are in the variables partial
       padding:1rem;
       margin:1rem 1rem 0 0;
     }
-  } 
-  footer{
-    @include col(3);
-    display:flex;
-    flex-flow: row;
-    justify-content: space-evenly;
+} 
+
+footer{
+  @include col(3);
+  display:flex;
+  flex-flow: row;
+  justify-content: space-evenly;
       
     a{
       flex: 1 1 auto;
     }
+}
 
-    }
 .sidebar{
   width:100%;
 }
@@ -192,21 +195,20 @@ note mixins and variables are in the variables partial
       justify-content: space-around;
     }
   }
-  }
+}
   
-  .design-archives{
-    text-align: center;
-    display: flex;
-    flex-flow: column;
-    align-content: center;
-    justify-content: center;
-    width:100%;
-    padding:1rem 1rem 3rem 1rem;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.01), rgba(0, 0, 0,0.3));
-    background-color:$color-accent;
-    border-radius: 5px;
+.design-archives{
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  width:100%;
+  padding:1rem 1rem 3rem 1rem;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0 ,0.01), rgba(0, 0, 0,0.3));
+  background-color:$color-accent;
+  border-radius: 5px;
     
-
     ul{
       display:flex;
       flex-direction: row wrap;
@@ -223,7 +225,7 @@ note mixins and variables are in the variables partial
           padding:1rem;
           border-radius: 10px;
           color:$color-light;
-          transition: 0.5s;
+          @include transition(0.5s);
         }
         a:hover{
           background-color:$color-light;
@@ -236,11 +238,10 @@ note mixins and variables are in the variables partial
     }
   }
   
-  .zen-resources{
-    //overflow:scroll;
-    text-align: center;
-    width:70%;
-    margin:1em auto;
+.zen-resources{
+  text-align: center;
+  width:70%;
+  margin:1em auto;
     h3{
       margin-bottom:2em;
     }
@@ -255,6 +256,7 @@ note mixins and variables are in the variables partial
       justify-content:space-evenly;
       text-align:center;
       margin:0 auto;
+
       li{
         a{
           color:$color-accent;
@@ -285,8 +287,8 @@ note mixins and variables are in the variables partial
       }
     }
   }
-  .view-css::after,.zen-faq::after,
- .zen-translations::after{
+.view-css::after,.zen-faq::after,
+.zen-translations::after{
  content:""url(assets/magnifying_glass.png);
  display:block;
  position:relative;
