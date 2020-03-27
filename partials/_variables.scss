@@ -9,6 +9,15 @@ $color-darkest: #1f110b; // Dark Brown
 $color-dark: #412312; // brown
 $color-med: #5F3916; // medium brown
 $color-light: #C7B299; // light brown
+
+/* -------------------------------- 
+
+gradients
+
+-------------------------------- */
+$gradient-small-view: linear-gradient(to bottom, rgba(0, 0, 0 ,0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0,0.7) 80%);
+$gradient-large-view: linear-gradient(to right, rgba(0, 0, 0 ,0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0,0.8));
+
 /* -------------------------------- 
 
 Sherlock and smoke variables

@@ -61,6 +61,11 @@ Colors
 -------------------------------- */
 /* -------------------------------- 
 
+gradients
+
+-------------------------------- */
+/* -------------------------------- 
+
 Sherlock and smoke variables
 
 -------------------------------- */
@@ -157,12 +162,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(1) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
-  background-color: #cf7e50;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
+  background-color: #914e28;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(1) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -170,12 +175,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(2) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #b66440;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(2) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -183,12 +188,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(3) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #bc0115;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(3) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -196,12 +201,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(4) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #5F3916;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(4) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -209,12 +214,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(5) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #cf7e50;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(5) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -222,12 +227,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(6) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #904f33;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(6) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -235,12 +240,12 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(7) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #a20112;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(7) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
@@ -248,24 +253,25 @@ Styling for the design selection section (bookshelf)
 .design-selection nav li:nth-child(8) {
   margin: 0 1px 0 0;
   padding: 3rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.5) 85%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.05) 30%, rgba(0, 0, 0, 0.7) 80%);
   background-color: #cf7e50;
 }
 @media only screen and (min-width: 46.8em) {
   .design-selection nav li:nth-child(8) {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
     writing-mode: vertical-rl;
     padding: 2rem;
   }
 }
 .design-selection nav .design-name {
   font-family: "Jim Nightshade", cursive;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0.5rem;
   letter-spacing: 0.3rem;
 }
 .design-selection nav .designer-name {
   margin: 0.5rem;
+  font-size: 1.2rem;
 }
 .design-selection nav li a {
   color: #C7B299;
