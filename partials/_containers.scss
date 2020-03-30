@@ -211,7 +211,7 @@ footer{
     
     ul{
       display:flex;
-      flex-direction: row wrap;
+      flex-direction: row;
       text-align: center;
       justify-content: space-evenly;
 
@@ -239,8 +239,9 @@ footer{
   }
   
 .zen-resources{
+  overflow: scroll;
   text-align: center;
-  width:70%;
+  width:100%;
   margin:1em auto;
     h3{
       margin-bottom:2em;
@@ -249,7 +250,6 @@ footer{
     ul {
       position:relative;
       left:3%;
-      overflow: none;
       width:90%;
       display:flex;
       flex-direction:row;
